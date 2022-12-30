@@ -1,5 +1,5 @@
 // NftUploader.jsx
-import { Ethers } from "ethers";
+import { ethers } from "ethers";
 import Web3Mint from "../../utils/Web3Mint.json";
 import { Web3Storage } from 'web3.storage';
 import { Button } from "@mui/material";
@@ -66,9 +66,9 @@ const NftUploader = () => {
     try {
       const { ethereum } = window;
       if (ethereum) {
-        const provider = new Ethers.providers.Web3Provider(ethereum);
+        const provider = new ethers.providers.Web3Provider(ethereum);
         const signer = provider.getSigner();
-        const connectedContract = new Ethers.Contract(
+        const connectedContract = new ethers.Contract(
           CONTRACT_ADDRESS,
           Web3Mint.abi,
           signer
