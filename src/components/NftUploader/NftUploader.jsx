@@ -1,8 +1,7 @@
 // NftUploader.jsx
 import { ethers } from "ethers";
 import Web3Mint from "../../utils/Web3Mint.json";
-// import { Web3Storage } from 'web3.storage';
-import { Web3Storage } from 'web3.storage/dist/bundle.esm.min.js';
+import { Web3Storage } from 'web3.storage';
 import { Button } from "@mui/material";
 import React from "react";
 import { useEffect, useState } from 'react'
